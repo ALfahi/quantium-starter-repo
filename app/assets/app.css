@@ -2,5 +2,13 @@
     margin: 0 auto;
     text-align: center;
     margin-top: 1rem;
+    margin-bottom: 5rem;
 
+}
+
+.radio {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
 }
