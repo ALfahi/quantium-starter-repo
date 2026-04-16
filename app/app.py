@@ -24,7 +24,7 @@ COLOUR_MAP = {# we want to map regions to different colours
 # function to handle users clicking the radio button and displaying different sets of data
 @app.callback(
     Output('lineChart', 'figure'),
-    Input('region-filter', 'value')
+    Input('regionFilter', 'value')
 )
 
 def updatGraph(selected_region):
@@ -50,7 +50,7 @@ app.layout = html.Div(children=[
     html.H2(children='Soul Foods Analytics', className="header"),
 
     dcc.RadioItems(
-        id='region-filter',
+        id='regionFilter',
         options=[
             {'label': 'All', 'value': 'all'},
             {'label': 'North', 'value': 'north'},
